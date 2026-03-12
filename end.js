@@ -26,6 +26,6 @@ saveHighScore = (e) => {
     highScores.splice(5);
 
     localStorage.setItem("highScores", JSON.stringify(highScores));
-    window.location.assign("Gamifikasi-K7/") ;
+    window.location.assign("./") ;
 
 };
