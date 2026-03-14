@@ -22,5 +22,29 @@
         "choice3": "Project Manager",
         "choice4": "Data Analyst",
         "answer": 2
+    },
+    {
+        "question": "Which of this Apps that AREN'T used for designing?",
+        "choice1": "Adobe Photoshop",
+        "choice2": "Adobe Illustrator",
+        "choice3": "Capcut",
+        "choice4": "Ibis Paint X",
+        "answer": 3
+    },
+    {
+        "question": "What is the name of PixelPals's mascot?",
+        "choice1": "Pixel",
+        "choice2": "Pipa",
+        "choice3": "Pip",
+        "choice4": "Pal",
+        "answer": 2
+    },
+    {
+        "question": "How long is the study period in Media Production?",
+        "choice1": "A Year",
+        "choice2": "2 Semesters",
+        "choice3": "3 Years",
+        "choice4": "8 Semesters",
+        "answer": 4
     }
 ]

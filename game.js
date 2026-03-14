@@ -3,6 +3,8 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const questionCounterText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
+const loader = document.getElementById("loader");
+const game = document.getElementById("game");
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -16,16 +18,19 @@ fetch("question.json")
 .then( res =>{ 
     console.log(res);
     return res.json();
-}).then( loadedQuestions => {
+})
+.then( loadedQuestions => {
     console.log(loadedQuestions);
     questions = loadedQuestions;
+
     startGame();
+
 }).catch( err => {
     console.error(err);
 });
 
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 5;
 
 startGame = () => {
     questionCounter = 0;
@@ -33,6 +38,8 @@ startGame = () => {
     availableQuestions = [...questions];
     console.log(availableQuestions);
     getNewQuestion();
+    game.classList.remove("hidden");
+    loader.classList.add("hidden");
 };
 
 getNewQuestion = () => {
