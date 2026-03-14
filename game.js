@@ -10,33 +10,19 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [
-    {
-        question: "What application does artists use for designing?",
-        choice1: "Adobe Photoshop",
-        choice2: "Adobe Illustrator",
-        choice3: "Adobe InDesign",
-        choice4: "Adobe Premiere Pro",
-        answer: 2
-    },
-    {
-        question: "How do you give 3D effect to a 2D drawing?",
-        choice1: "Shading",
-        choice2: "Hatching",
-        choice3: "Cross-Hatching",
-        choice4: "Stippling",
-        answer: 1
-    },
-    {
-        question: "What is one of the Core Streams of PixelPals (PIPA)?",
-        choice1: "Engineer",
-        choice2: "Artist",
-        choice3: "Project Manager",
-        choice4: "Data Analyst",
-        answer: 2
-    }
-];
+let questions = [];
 
+fetch("question.json")
+.then( res =>{ 
+    console.log(res);
+    return res.json();
+}).then( loadedQuestions => {
+    console.log(loadedQuestions);
+    questions = loadedQuestions;
+    startGame();
+}).catch( err => {
+    console.error(err);
+});
 
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 3;
@@ -102,5 +88,3 @@ incrementScore = num => {
     score += num;
     scoreText.innerText = score;
 }
-
-startGame();
