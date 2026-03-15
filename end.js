@@ -4,6 +4,7 @@ const finalScore = document.getElementById("finalScore");
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+console.log(highScores);
 
 const MAX_HIGH_SCORES = 5;
 
@@ -18,7 +19,7 @@ saveHighScore = (e) => {
     e.preventDefault();
 
     const score = {
-        score: Math.floor(Math.random() * 100),
+        score: Math.floor(mostRecentScore),
         name: username.value
     };
     highScores.push(score);
