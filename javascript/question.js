@@ -19,13 +19,38 @@ const questions = [
       },
       {
         question: "What is the animal of Pixelpals's mascot?",
-        options: ["Bear", "Crocodile", "Owl", "Eagle"],
+        options: ["Bear", "Dinosaur", "Owl", "Eagle"],
         correctAnswer: 1,
       },
       {
         question: "Which color that is NOT present in PixelPals's logo?",
         options: ["Green", "Blue", "White", "Yellow"],
         correctAnswer: 3,
+      },
+      {
+        question: "What is the Instagram account's name?",
+        options: ["PixelPals", "PIPA", "pixelpals.ui", "Promed.ui"],
+        correctAnswer: 2,
+      },
+      {
+        question: "What is the name of one of the lecturers?",
+        options: ["Jennifer Leonita", "Carl Anderson", "Ploopy Anime", "Pamela Jaya"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What is the artstyle of PixelPals logo?",
+        options: ["Anime", "Pixel Style", "Cartoon", "Sketch"],
+        correctAnswer: 1,
+      },
+      {
+        question: "What ISN'T a PIPA Essentials?",
+        options: ["Caffeine", "Laptop with stickers", "Emotional support", "Pocket"],
+        correctAnswer: 3,
+      },
+      {
+        question: "Which app that ISN'T recommended by PixelPals?",
+        options: ["Illustrator", "Figma", "CapCut", "After Effects"],
+        correctAnswer: 2,
       },
     ],
   },
