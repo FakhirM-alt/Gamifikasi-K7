@@ -45,6 +45,7 @@ const startTimer = () => {
       nextQuestionBtn.style.visibility = "visible";
       quizContainer.querySelector(".quiz-timer").style.background = "#c31402";
       highlightCorrectAnswer();
+      
       // Disable all answer options after one option is selected
       answerOptions.querySelectorAll(".answer-option").forEach((option) => (option.style.pointerEvents = "none"));
     }
