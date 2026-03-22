@@ -92,6 +92,16 @@ const questions = [
         options: ["L", "M", "V", "Esc"],
         correctAnswer: 0,
       },
+      {
+        question: "How do you get Clipping Mask to work?",
+        options: ["Merge them with a tool", "Bring the shape back of image", "Bring the shape front of image", "Edit out the image"],
+        correctAnswer: 2,
+      },
+      {
+        question: "How do you get Clipping Mask to work?",
+        options: ["Merge them with a tool", "Bring the shape back of image", "Bring the shape front of image", "Edit out the image"],
+        correctAnswer: 2,
+      },
     ],
   },
   {
