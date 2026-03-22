@@ -29,13 +29,16 @@
         </div>
         <div class="config-option">
           <h4 class="option-title">Number of Questions</h4>
+
           <div class="question-options">
             <button class="question-option">5</button>
             <button class="question-option active">10</button>
             <button class="question-option">15</button>
           </div>
         </div>
+
         <button class="start-quiz-btn">Start Quiz</button>
+        <button class="view-score-btn">View Scores</button>
       </div>
     </div>
 
@@ -71,7 +74,10 @@
         <img src="quiz-over.png" class="result-img" />
         <h2 class="result-title">Quiz Completed!</h2>
         <p class="result-message"></p>
-        <button class="try-again-btn">Try Again</button>
+
+        <input type="text" name="username" id="username" placeholder="username">
+        <button class="try-again-btn">Try Again?</button>
+        <button class="save-score-btn" id="saveScoreBtn" onclick="saveScore(event)" disabled>Save Score?</button>
       </div>
     </div>
 

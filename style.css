@@ -53,6 +53,7 @@ body {
   pointer-events: auto;
   transform: translateY(0);
 }
+
 /* Quiz Configuration Stylings */
 .config-container {
   z-index: 10;
@@ -76,6 +77,7 @@ body {
   gap: 15px;
   grid-template-columns: repeat(2, 1fr);
 }
+
 .config-option .question-options {
   display: flex;
   flex-wrap: wrap;
@@ -83,6 +85,7 @@ body {
   padding: 0 30px;
   justify-content: center;
 }
+
 .config-option button {
   padding: 12px;
   font-size: 0.938rem;
@@ -106,9 +109,11 @@ body {
 .config-option .question-options button {
   flex: 1 1 10%;
 }
+
 .config-container .start-quiz-btn,
 .quiz-footer .next-question-btn,
-.result-container .try-again-btn {
+.result-container .try-again-btn, 
+.view-score-btn, .save-score-btn{
   color: #fff;
   border: none;
   font-weight: 500;
@@ -244,10 +249,12 @@ body {
   font-weight: 700;
   color: #5145BA;
 }
+
 .result-container .try-again-btn {
   padding: 12px 20px;
   margin-top: 30px;
 }
+
 /* Media query code for mobile screens */
 @media (max-width: 624px) {
   .config-container,
@@ -274,4 +281,26 @@ body {
   .result-container .result-title {
     font-size: 1.4rem;
   }
+}
+
+/* Forms */
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-top: 1rem;
+  width: 20rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(153, 67, 207, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
 }
