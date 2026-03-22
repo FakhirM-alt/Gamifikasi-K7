@@ -81,7 +81,17 @@ const questions = [
         question: "Which of these shortcut keys are ONLY from MacBook?",
         options: ["Alt + Ctrl + E", "ESC", "F", "Cmd + Z"],
         correctAnswer: 3,
-      }
+      },
+      {
+        question: "What is the name of the tool that would create path with precision?",
+        options: ["Eraser", "Pen Tool", "Eyedropper", "Elipse Tool"],
+        correctAnswer: 1,
+      },
+      {
+        question: "What is the shortcut key for Elipse Tool in Adobe Illustrator?",
+        options: ["L", "M", "V", "Esc"],
+        correctAnswer: 0,
+      },
     ],
   },
   {
