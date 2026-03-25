@@ -58,7 +58,7 @@ const questions = [
     category: "artist",
     questions: [
       {
-        question: "Which app is suitable for artist?",
+        question: "Which app is made for artist?",
         options: ["Adobe Illustrator", "Capcut", "Adobe Audition", "Gallery"],
         correctAnswer: 0,
       },
@@ -98,9 +98,9 @@ const questions = [
         correctAnswer: 2,
       },
       {
-        question: "How do you get Clipping Mask to work?",
-        options: ["Merge them with a tool", "Bring the shape back of image", "Bring the shape front of image", "Edit out the image"],
-        correctAnswer: 2,
+        question: "Which is the best alternative app for Adobe Illustrator?",
+        options: ["Capcut", "Adobe Photoshop", "Gallery", "Google Images"],
+        correctAnswer: 1,
       },
     ],
   },

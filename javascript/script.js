@@ -12,6 +12,7 @@ const QUIZ_TIME_LIMIT = 15;
 let currentTime = QUIZ_TIME_LIMIT;
 let timer = null;
 let quizCategory = "programming";
+let quizCategory = "PixelPals";
 let numberOfQuestions = 10;
 let currentQuestion = null;
 const questionsIndexHistory = [];

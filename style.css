@@ -132,6 +132,7 @@ body {
 .result-container .try-again-btn:hover {
   background: #403795;
 }
+
 /* Quiz Container Stylings */
 .quiz-container {
   width: 480px;
@@ -169,6 +170,7 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
 .quiz-content .answer-options {
   list-style: none;
   display: flex;
@@ -228,6 +230,7 @@ body {
   align-items: center;
   padding: 9px 17px;
 }
+
 /* Quiz Result Stylings */
 .result-container {
   text-align: center;
