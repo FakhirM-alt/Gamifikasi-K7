@@ -253,6 +253,13 @@ body {
   color: #5145BA;
 }
 
+.result-container #finalScore {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #5145BA;
+}
+
 .result-container .try-again-btn {
   padding: 12px 20px;
   margin-top: 30px;

@@ -23,8 +23,10 @@ const showQuizResult = () => {
   clearInterval(timer);
   document.querySelector(".quiz-popup").classList.remove("active");
   document.querySelector(".result-popup").classList.add("active");
-  const resultText = `You answered <b>${correctAnswersCount}</b> out of <b>${numberOfQuestions}</b> questions correctly. Great effort!`;
+  const resultText = `You have answered all <b>${numberOfQuestions}</b> questions. Great effort!`;
   resultContainer.querySelector(".result-message").innerHTML = resultText;
+  const resultScore = correctAnswersCount * 100 / numberOfQuestions;
+  resultContainer.querySelector('#finalScore').innerHTML = resultScore;
 };
 
 // Clear and reset the timer
@@ -58,6 +60,8 @@ const getRandomQuestion = () => {
 
   // Show the results if all questions have been used
   if (questionsIndexHistory.length >= Math.min(numberOfQuestions, categoryQuestions.length)) {
+    localStorage.getItem('mostRecentScore', finalScore);
+
     return showQuizResult();
   }
 
