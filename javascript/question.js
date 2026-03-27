@@ -102,6 +102,11 @@ const questions = [
         options: ["Capcut", "Adobe Photoshop", "Gallery", "Google Images"],
         correctAnswer: 1,
       },
+      {
+        question: "What is the best way to showcase your creative skills?",
+        options: ["Drawing", "Videos", "Web page", "Creative CV"],
+        correctAnswer: 3,
+      },
     ],
   },
   {
@@ -128,9 +133,34 @@ const questions = [
         correctAnswer: 1,
       },
       {
-        question: "Which color ISN'T a secondary color?",
+        question: "Which color IS a secondary color?",
         options: ["Red", "Blue", "Yellow", "Green"],
         correctAnswer: 3,
+      },
+      {
+        question: "Which of these brands uses logomix?",
+        options: ["LG", "Marvel", "IBM", "Apple"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which color that gets more attetion?",
+        options: ["Red", "Black", "Orange", "Green"],
+        correctAnswer: 0,
+      },
+      {
+        question: "How do you get a simple text more attention?",
+        options: ["Brighter", "Smaller", "Bigger", "Fancier"],
+        correctAnswer: 2,
+      },
+      {
+        question: "Which one of these ISN'T element of typographic?",
+        options: ["Case", "Surface", "Color", "Position"],
+        correctAnswer: 1,
+      },
+      {
+        question: "Which of these brands does NOT have a mascot?",
+        options: ["Nike", "Warner Brothers", "Pringles", "Hokben"],
+        correctAnswer: 0,
       }
     ],
   }
