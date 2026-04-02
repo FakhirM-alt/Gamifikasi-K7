@@ -14,6 +14,7 @@ let timer = null;
 let quizCategory = "PixelPals";
 let numberOfQuestions = 10;
 let currentQuestion = null;
+let currentImage = null;
 const questionsIndexHistory = [];
 let correctAnswersCount = 0;
 let disableSelection = false;
@@ -110,6 +111,14 @@ const renderQuestion = () => {
   nextQuestionBtn.style.visibility = "hidden";
   quizContainer.querySelector(".quiz-timer").style.background = "#32313C";
   quizContainer.querySelector(".question-text").textContent = currentQuestion.question;
+  quizContainer.querySelector(".question-image").style.display = "none"; // Hide image by default
+
+  // If the question has an image, display it
+  if (currentQuestion.image) {
+    quizContainer.querySelector(".question-image").src = currentQuestion.image;
+    quizContainer.querySelector(".question-image").style.display = "block";
+  }
+  
   questionStatus.innerHTML = `<b>${questionsIndexHistory.length}</b> of <b>${numberOfQuestions}</b> Questions`;
   answerOptions.innerHTML = "";
 

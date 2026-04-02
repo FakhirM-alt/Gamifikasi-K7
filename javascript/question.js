@@ -107,6 +107,12 @@ const questions = [
         options: ["Drawing", "Videos", "Web page", "Creative CV"],
         correctAnswer: 3,
       },
+      {
+        question: "Which image fits the missing animation frame?",
+        image: "./Images/Image Question-1.png",
+        options: ["Image 1", "Image 2", "Image 3", "Image 4"],
+        correctAnswer: 1,
+      }
     ],
   },
   {
