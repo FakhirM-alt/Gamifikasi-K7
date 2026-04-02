@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #7068b3;
+  background: #93bf70;
 }
 
 .title-screen {
@@ -26,7 +26,7 @@ body {
   color: #fff;
   border: none;
   font-weight: 500;
-  background: #5145BA;
+  background: #2f51ee;
   padding: 13px 25px;
   cursor: pointer;
   font-size: 1rem;
@@ -144,17 +144,17 @@ body {
   font-weight: 500;
   border-radius: 6px;
   background: #fff;
-  border: 1px solid #9B8FFF;
+  border: 1px solid #2f51ee;
   transition: 0.3s ease;
 }
 .config-option button.active {
-  color: #5145BA;
-  border-color: #5145BA;
-  background: #dfdafd;
+  color: #2f51ee;
+  border-color: #2f51ee;
+  background: #5f7cc4;
 }
 .config-option button:hover,
 .quiz-content .answer-option:hover {
-  background: #dad5fd;
+  background: #5f7cc4;
 }
 .config-option .question-options button {
   flex: 1 1 10%;
@@ -168,7 +168,7 @@ body {
   color: #fff;
   border: none;
   font-weight: 500;
-  background: #5145BA;
+  background: #2f51ee;
   padding: 13px 25px;
   cursor: pointer;
   font-size: 1rem;
@@ -183,7 +183,7 @@ body {
 .result-container .try-again-btn:hover, 
 .score-container .start-up:hover, .view-score-btn:hover, 
 .save-score-btn:hover, .open-quiz-btn:hover {
-  background: #403795;
+  background: #5f7cc4;
 }
 
 /* Quiz Container Stylings */
@@ -244,7 +244,7 @@ body {
   font-weight: 500;
   border-radius: 6px;
   padding: 13px 16px;
-  border: 1px solid #B5ACFF;
+  border: 1px solid #2f51ee;
   background: #F3F1FF;
   justify-content: space-between;
   transition: 0.3s ease;
@@ -260,7 +260,7 @@ body {
   color: #155724;
 }
 .quiz-content .answer-option.correct span {
-  color: #16AE56;
+  color: #0b5b2d;
 }
 .quiz-content .answer-option.incorrect {
   border-color: #F4BEC3;
@@ -309,14 +309,14 @@ body {
 }
 .result-container .result-message b {
   font-weight: 700;
-  color: #5145BA;
+  color: #93bf70;
 }
 
 .result-container #finalScore {
   margin-top: 20px;
   font-size: 25px;
   font-weight: 700;
-  color: #5145BA;
+  color: #93bf70;
 }
 
 .result-container .try-again-btn {
@@ -367,7 +367,7 @@ input {
   padding: 0.5rem;
   font-size: 1.2rem;
   border: none;
-  box-shadow: 0 0.1rem 1.4rem 0 rgba(153, 67, 207, 0.5);
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(67, 207, 97, 0.5);
 }
 
 input::placeholder {
