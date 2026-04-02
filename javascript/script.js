@@ -151,6 +151,35 @@ const resetQuiz = () => {
   document.querySelector(".result-popup").classList.remove("active");
 };
 
+// Start the quiz when the title screen button is clicked
+const titleScreenBtn = document.querySelector(".title-screen + button");
+titleScreenBtn.addEventListener("click", () => {
+  document.querySelector(".title-popup").classList.remove("active");
+  document.querySelector(".menu-popup").classList.add("active");
+});
+
+//Open Config Popup
+const openConfigBtn = document.querySelector(".open-quiz-btn");
+openConfigBtn.addEventListener("click", () => {
+  document.querySelector(".menu-popup").classList.remove("active");
+  document.querySelector(".config-popup").classList.add("active");
+});
+
+//Open View Score Popup
+const viewScoreBtn = document.querySelector(".view-score-btn");
+viewScoreBtn.addEventListener("click", () => {
+  document.querySelector(".menu-popup").classList.remove("active");
+  document.querySelector(".score-popup").classList.add("active");
+});
+
+//Back to Menu from Score Popup
+const backToMenuBtn = document.querySelector(".score-popup .start-up");
+backToMenuBtn.addEventListener("click", () => {
+  document.querySelector(".score-popup").classList.remove("active");
+  document.querySelector(".menu-popup").classList.add("active");
+});
+
+
 // Event listeners
 nextQuestionBtn.addEventListener("click", renderQuestion);
 resultContainer.querySelector(".try-again-btn").addEventListener("click", resetQuiz);

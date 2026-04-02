@@ -13,8 +13,25 @@
   </head>
 
   <body>
+
+    <!-- Title Screen Popup -->
+    <div class="title-popup popup-container active">
+      <h1 class="title-screen">PixelPals Quiz</h1>
+      <button class="start-up">Open App</button>
+    </div>
+
+    <!--Menu Screen-->
+    <div class="menu-popup popup-container">
+      <div class="menu-container quiz-box">
+        <h2 class="menu-title">Select</h2>
+
+        <button class="open-quiz-btn">Open Quiz</button>
+        <button class="view-score-btn">View Scores</button>
+      </div>
+    </div>
+
     <!-- Quiz Configuration Popup -->
-    <div class="config-popup popup-container active">
+    <div class="config-popup popup-container">
       <div class="config-container quiz-box">
         <h2 class="config-title">Quiz Configuration</h2>
         <div class="config-option">
@@ -37,8 +54,7 @@
           </div>
         </div>
 
-        <button class="start-quiz-btn">Start Quiz</button>
-        <button class="view-score-btn">View Scores</button>
+        <button class="start-quiz-btn">Start</button>
       </div>
     </div>
 
@@ -79,6 +95,16 @@
         <input type="text" name="username" id="username" placeholder="username">
         <button class="try-again-btn">Try Again?</button>
         <button class="save-score-btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save Score?</button>
+      </div>
+    </div>
+
+    <!--Score Popup-->
+    <div class="score-popup popup-container">
+      <div class="score-container quiz-box">
+        <h2 class="score-title">High Scores</h2>
+        <ul class="score-list"></ul>
+
+        <button class="start-up">Back to Menu</button>
       </div>
     </div>
 
