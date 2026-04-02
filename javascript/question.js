@@ -9,7 +9,7 @@ const questions = [
       },
       {
         question: "What is the level program of Vocational Education of University of Indonesia?",
-        options: ["S1", "S2", "D3", "D4"],
+        options: ["S1", "S2", "D3 and D4", "S3"],
         correctAnswer: 2,
       },
       {
