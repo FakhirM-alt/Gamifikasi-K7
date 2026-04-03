@@ -112,6 +112,12 @@ const questions = [
         image: "./Images/Image Question-1.png",
         options: ["Image 1", "Image 2", "Image 3", "Image 4"],
         correctAnswer: 1,
+      },
+      {
+        question: "What is the correct order of these animation frames?",
+        image: "./Images/Image Question-2.jpeg",
+        options: ["1-3-5-6-2-4", "1-2-3-4-5-6","1-4-2-6-3-5","1-5-3-6-2-4"],
+        correctAnswer: 0,
       }
     ],
   },

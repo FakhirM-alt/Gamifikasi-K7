@@ -28,6 +28,8 @@ const showQuizResult = () => {
   resultContainer.querySelector(".result-message").innerHTML = resultText;
   const resultScore = correctAnswersCount * 100 / numberOfQuestions;
   resultContainer.querySelector('#finalScore').innerHTML = resultScore;
+
+  localStorage.setItem('mostRecentScore', resultScore);
 };
 
 // Clear and reset the timer
@@ -61,7 +63,6 @@ const getRandomQuestion = () => {
 
   // Show the results if all questions have been used
   if (questionsIndexHistory.length >= Math.min(numberOfQuestions, categoryQuestions.length)) {
-    localStorage.getItem('mostRecentScore', finalScore);
 
     return showQuizResult();
   }
@@ -127,6 +128,14 @@ const renderQuestion = () => {
     const li = document.createElement("li");
     li.classList.add("answer-option");
     li.textContent = option;
+
+    //If the option contains an image, create an <img> element and append it to the option
+    if (option.includes("data:image")) {
+      const img = document.createElement("img");
+      img.src = option;
+      li.appendChild(img);
+    }
+
     answerOptions.append(li);
     li.addEventListener("click", () => handleAnswer(li, index));
   });
