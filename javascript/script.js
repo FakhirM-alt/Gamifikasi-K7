@@ -29,6 +29,7 @@ const showQuizResult = () => {
   const resultScore = correctAnswersCount * 100 / numberOfQuestions;
   resultContainer.querySelector('#finalScore').innerHTML = resultScore;
 
+  // Save the most recent score to localStorage for the high score page
   localStorage.setItem('mostRecentScore', resultScore);
 };
 
@@ -64,6 +65,8 @@ const getRandomQuestion = () => {
   // Show the results if all questions have been used
   if (questionsIndexHistory.length >= Math.min(numberOfQuestions, categoryQuestions.length)) {
 
+
+    
     return showQuizResult();
   }
 
