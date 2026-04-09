@@ -7,6 +7,14 @@ const questionStatus = quizContainer.querySelector(".question-status");
 const timerDisplay = quizContainer.querySelector(".timer-duration");
 const resultContainer = document.querySelector(".result-container");
 
+const username = document.getElementById('username');
+const saveScoreBtn = document.getElementById('saveScoreBtn');
+const resultScore = document.getElementById('resultScore');
+const mostRecentScore = localStorage.getItem('mostRecentScore');
+
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const MAX_HIGH_SCORES = 5;
+
 // Quiz state variables
 const QUIZ_TIME_LIMIT = 15;
 let currentTime = QUIZ_TIME_LIMIT;
@@ -18,6 +26,7 @@ let currentImage = null;
 const questionsIndexHistory = [];
 let correctAnswersCount = 0;
 let disableSelection = false;
+let disablesaveScoreBtn = false;
 
 // Display the quiz result and hide the quiz container
 const showQuizResult = () => {
@@ -31,6 +40,24 @@ const showQuizResult = () => {
 
   // Save the most recent score to localStorage for the high score page
   localStorage.setItem('mostRecentScore', resultScore);
+
+  // Enable the save score button if the user input username
+  username.addEventListener("keyup", () => {
+    saveScoreBtn.disabled = !username.value;
+  });
+
+  // Save the high score to localStorage when the save button is clicked
+  saveHighScore = e => {
+    console.log("clicked the save button!");
+    e.preventDefault();
+
+    const score = {
+        score: mostRecentScore,
+        name: username.value    
+    };
+    console.log(score);
+};
+
 };
 
 // Clear and reset the timer

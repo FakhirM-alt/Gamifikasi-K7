@@ -148,7 +148,7 @@ body {
   transition: 0.3s ease;
 }
 .config-option button.active {
-  color: #2f51ee;
+  color: #1e42e6;
   border-color: #2f51ee;
   background: #5f7cc4;
 }

@@ -22,13 +22,5 @@ saveHighScore = e => {
         score: mostRecentScore,
         name: username.value    
     };
-    highscores.push(score);
-
-    highscores.sort((a, b) => b.score - a.score);
-
-    highscores.splice(5);
-
-    localStorage.setItem("highScores", JSON.stringify(highscores));
-
-    console.log(highscores);
+    console.log(score);
 };
