@@ -173,6 +173,18 @@ const questions = [
         question: "Which of these brands does NOT have a mascot?",
         options: ["Nike", "Warner Brothers", "Pringles", "Hokben"],
         correctAnswer: 0,
+      },
+      {
+        question: "What do you consinder this poster?",
+        image: "./Images/Image Question-3.png",
+        options: ["Minimalist", "Vintage", "Grunge", "Typography"],
+        correctAnswer: 3,
+      },
+      {
+        question: "What do these 3 designs have in common?",
+        image: "./Images/Image Question-4.png",
+        options: ["They have the same colors", "All are vertical", "No circles", "The lines are straight"],
+        correctAnswer: 0,
       }
     ],
   }
