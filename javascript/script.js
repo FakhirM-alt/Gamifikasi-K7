@@ -6,6 +6,7 @@ const nextQuestionBtn = quizContainer.querySelector(".next-question-btn");
 const questionStatus = quizContainer.querySelector(".question-status");
 const timerDisplay = quizContainer.querySelector(".timer-duration");
 const resultContainer = document.querySelector(".result-container");
+const menuContainer = document.querySelector(".menu-popup");
 
 const username = document.getElementById('username');
 const saveScoreBtn = document.getElementById('saveScoreBtn');
@@ -198,13 +199,6 @@ const resetQuiz = () => {
   document.querySelector(".config-popup").classList.add("active");
   document.querySelector(".result-popup").classList.remove("active");
 };
-
-// Start the quiz when the title screen button is clicked
-const titleScreenBtn = document.querySelector(".title-screen + button");
-titleScreenBtn.addEventListener("click", () => {
-  document.querySelector(".title-popup").classList.remove("active");
-  document.querySelector(".menu-popup").classList.add("active");
-});
 
 //Open Config Popup
 const openConfigBtn = document.querySelector(".open-quiz-btn");

@@ -15,26 +15,7 @@ body {
   background: #93bf70;
 }
 
-.title-screen {
-  font-size: 2.5rem;
-  color: #fff;
-  font-weight: 700;
-  margin-right: 50px;
-}
-
-.start-up {
-  color: #fff;
-  border: none;
-  font-weight: 500;
-  background: #2f51ee;
-  padding: 13px 25px;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
-.menu-container .menu-title {
+.menu-container {
   font-size: 3.43rem;
   font-weight: 700;
   margin-bottom: 30px;
