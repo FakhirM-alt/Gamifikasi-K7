@@ -8,6 +8,31 @@ body {
 
 .title {
   text-align: center;
+  background-color: #fff;
+  width: 590px;
+  height: 290px;
+  border-radius: 7px;
+  box-shadow: 0 8px 16px #151414aa;
+  z-index: -1;
+}
+
+.tab {
+  background-color: #d0fd5f;
+  height: 50px;
+  margin-top: 0px;
+  position: relative;
+  border-radius: 7px;
+}
+
+.circle {
+  height: 27px;
+  width: 27px;
+  background-color: #2f51ee;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  right: 535px;
+  top: 12px;
 }
 
 .jersey-10-regular {
@@ -16,7 +41,9 @@ body {
   font-style: normal;
   font-size: 5.7rem;
   color: #2f51ee;
+  margin-top: 25px;
   margin-bottom: 30px;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
 }
 
 a {
@@ -28,7 +55,7 @@ a {
 .pixelify-sans-button {
   font-family: "Pixelify Sans", sans-serif;
   font-size: 45px;
-  font-weight: 500;
+  font-weight: 250;
   font-style: normal;
   margin: 7px 0;
 }
