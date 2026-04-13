@@ -15,16 +15,78 @@ body {
   background: #93bf70;
 }
 
+.pixelify-sans-button {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 250;
+  font-style: normal;
+  margin: 7px 0;
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #2f51ee;
+}
+
 .menu-container {
   font-size: 3.43rem;
   font-weight: 700;
   margin-bottom: 30px;
+  width: 400px;
+  padding-bottom: 34px;
+  width: 500px;
+  text-align: center;
 }
 
-.menu-container {
-  width: 400px;
-  padding: 40px 25px;
-  text-align: center;
+.menu-title{
+  font-size: 3.30rem;
+  margin-top: 26px;
+  color: #2f51ee;
+}
+
+.tab {
+  background-color: #d0fd5f;
+  height: 57px;
+  position: relative;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: #2f51ee;
+  z-index: 0;
+}
+
+.circle-1 {
+  height: 27px;
+  width: 27px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  right: 441px;
+  top: 13px;
+}
+
+.circle-2 {
+  height: 27px;
+  width: 27px;
+  background-color: #2f51ee;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  right: 408px;
+  top: 13px;
+}
+
+.circle-3 {
+  height: 27px;
+  width: 27px;
+  background-color: #5f7cc4;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  right: 375px;
+  top: 13px;
 }
 
 .score-container {
@@ -89,20 +151,25 @@ body {
 .config-container {
   z-index: 10;
   width: 415px;
-  padding: 25px;
   text-align: center;
 }
+
 .config-container .config-title {
-  font-size: 1.31rem;
+  font-size: 3.21rem;
+  margin-bottom: 10px;
 }
+
 .config-container .config-option {
-  margin-top: 25px;
+  padding: 13px;
 }
+
 .config-option .option-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.125rem;
   margin-bottom: 20px;
+  color: #2f51ee;
 }
+
 .config-option .category-options {
   display: grid;
   gap: 15px;
@@ -156,9 +223,12 @@ body {
   border-radius: 6px;
   transition: background 0.3s ease;
 }
+
 .config-container .start-quiz-btn {
-  margin-top: 30px;
+  margin-top: 21px;
+  margin-bottom: 20px;
 }
+
 .config-container .start-quiz-btn:hover,
 .quiz-footer .next-question-btn:hover,
 .result-container .try-again-btn:hover, 
