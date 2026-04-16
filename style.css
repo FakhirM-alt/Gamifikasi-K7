@@ -219,7 +219,7 @@ body {
 .config-container .start-quiz-btn,
 .quiz-footer .next-question-btn,
 .result-container .try-again-btn, 
-.view-score-btn, .save-score-btn, 
+.view-score-btn, 
 .open-quiz-btn {
   color: #fff;
   border: none;
@@ -227,6 +227,17 @@ body {
   background: #2f51ee;
   padding: 13px 25px;
   cursor: pointer;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  background: #93bf70;
+  padding: 13px 25px;
   font-size: 1rem;
   border-radius: 6px;
   transition: background 0.3s ease;
@@ -445,6 +456,7 @@ form {
 
 input {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 20rem;
   padding: 0.5rem;
   font-size: 1.2rem;

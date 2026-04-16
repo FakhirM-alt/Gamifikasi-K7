@@ -119,10 +119,12 @@
         <p class="result-message"></p>
         <h3 id="finalScore"></h3>
 
-        <input type="text" name="username" id="username" placeholder="username">
+        <form>
+          <input type="text" name="username" id="username" placeholder="username">
+          <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save Score?</button>
+        </form>
 
         <button class="try-again-btn">Try Again?</button>
-        <button type="submit" class="save-score-btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save Score?</button>
       </div>
     </div>
 
