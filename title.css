@@ -12,9 +12,7 @@ body {
   height: 340px;
   width: 600px;
   border-radius: 7px;
-  border-style: solid;
-  border-color: #5f7cc465;
-  box-shadow: 0 8px 16px #151414aa;
+  box-shadow: 0 8px 16px #2f51ee;
 }
 
 .tab {
