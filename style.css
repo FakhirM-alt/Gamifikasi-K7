@@ -49,7 +49,7 @@ body {
 
 .tab {
   background-color: #d0fd5f;
-  height: 57px;
+  height: 67px;
   position: relative;
   border-radius: 7px;
   border-style: solid;
@@ -165,6 +165,7 @@ body {
 
 .config-container .config-title {
   font-size: 3.21rem;
+  margin-top: 5px;
 }
 
 .config-container .config-option {
@@ -250,8 +251,7 @@ body {
 
 .config-container .start-quiz-btn:hover,
 .quiz-footer .next-question-btn:hover,
-.result-container .try-again-btn:hover, 
-.score-container .start-up:hover, .view-score-btn:hover, 
+.result-container .try-again-btn:hover, .view-score-btn:hover, 
 .save-score-btn:hover, .open-quiz-btn:hover {
   background: #5f7cc4;
 }
@@ -483,4 +483,24 @@ input::placeholder {
 
 .high-score:hover {
   transform: scale(1.05);
+}
+
+.start-up {
+  position: absolute;
+  color: #5f7cc4;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.start-up span {
+  font-size: 500;
+  font-size: 2.5rem;
+}
+
+.start-up:hover {
+  transition: all 0.3s ease;
+  color: #2f51ee;
 }

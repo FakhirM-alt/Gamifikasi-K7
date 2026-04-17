@@ -192,6 +192,13 @@ backToMenuBtn.addEventListener("click", () => {
   document.querySelector(".menu-popup").classList.add("active");
 });
 
+//Back to Menu from Config Popup
+const backToMenuFromConfigBtn = document.querySelector(".config-popup .start-up");
+backToMenuFromConfigBtn.addEventListener("click", () => {
+  document.querySelector(".config-popup").classList.remove("active");
+  document.querySelector(".menu-popup").classList.add("active");
+});
+
 //Open Main Menu Popup
 const updateScoreBtn = document.querySelector(".update-score-btn");
 updateScoreBtn.addEventListener("click", () => {
