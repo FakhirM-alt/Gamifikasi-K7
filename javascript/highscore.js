@@ -17,7 +17,8 @@ saveHighScore = e => {
 
     const score = {
         score: latestScore,
-        name: username.value
+        name: username.value,
+        category: quizCategory,
     };
     listScores.push(score);
 
