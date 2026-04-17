@@ -191,6 +191,13 @@ backToMenuBtn.addEventListener("click", () => {
   document.querySelector(".menu-popup").classList.add("active");
 });
 
+//Open View Score Popup
+const updateScoreBtn = document.querySelector(".update-score-btn");
+updateScoreBtn.addEventListener("click", () => {
+    document.querySelector(".result-popup").classList.remove("active");
+    document.querySelector(".score-popup").classList.add("active");
+});
+
 
 // Event listeners
 nextQuestionBtn.addEventListener("click", renderQuestion);

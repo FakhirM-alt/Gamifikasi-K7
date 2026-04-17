@@ -121,7 +121,7 @@
 
         <form>
           <input type="text" name="username" id="username" placeholder="username">
-          <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save Score?</button>
+          <button type="submit" class="btn update-score-btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save Score?</button>
         </form>
 
         <button class="try-again-btn">Try Again?</button>
@@ -132,7 +132,8 @@
     <div class="score-popup popup-container">
       <div class="score-container quiz-box">
         <h2 class="score-title">High Scores</h2>
-        <ul class="score-list"></ul>
+        
+        <ul id="highScoresList"></ul>
 
         <button class="start-up">Back to Menu</button>
       </div>
@@ -142,5 +143,6 @@
     <script src="javascript/question.js"></script>
     <script src="javascript/script.js"></script>
     <script src="javascript/highscore.js"></script>
+    <script src="javascript/update.js"></script>
   </body>
 </html>

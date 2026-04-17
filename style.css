@@ -467,3 +467,20 @@ input {
 input::placeholder {
   color: #aaa;
 }
+
+/* High Scores */
+#highScoresList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2.5rem;
+}
+
+.high-score {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2f51ee;
+}
+
+.high-score:hover {
+  transform: scale(1.05);
+}
