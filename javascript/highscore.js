@@ -20,6 +20,7 @@ saveHighScore = e => {
         name: username.value,
         category: quizCategory,
     };
+
     listScores.push(score);
 
     listScores.sort((a, b) => b.score - a.score);

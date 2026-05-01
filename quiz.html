@@ -66,12 +66,13 @@
           <h4 class="option-title">Select Category</h4>
 
           <div class="category-options">
-            <button class="category-option active">PixelPals</button>
-            <button class="category-option">Artist</button>
-            <button class="category-option">Designer</button>
+            <button onclick="switchCategory()" class="category-option active">PixelPals</button>
+            <button onclick="switchCategory()" class="category-option">Artist</button>
+            <button onclick="switchCategory()" class="category-option">Designer</button>
           </div>
 
         </div>
+        
         <div class="config-option">
           <h4 class="option-title">Number of Questions</h4>
 
@@ -150,7 +151,12 @@
 
         <h2 class="jersey-10-regular score-title">High Scores</h2>
         
-        <ul id="highScoresList"></ul>
+        <ul id="highScoresList">
+        </ul>
+
+        <button class="next-category-btn" onclick="filterCategory()">
+          Next Category
+        </button>
       </div>
     </div>
 

@@ -3,7 +3,8 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #93bf70;
+  background-image: url('./Images/Background-web.jpg');
+  background-size: cover;
 }
 
 .title {
