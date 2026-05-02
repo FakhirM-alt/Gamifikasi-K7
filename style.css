@@ -472,11 +472,18 @@ input::placeholder {
 }
 
 /* High Scores */
-#highScoresList {
+#highScoresList-PixelPals, #highScoresList-Designer, #highScoresList-Artist {
   list-style: none;
   padding-left: 100px;
   margin-bottom: 1.5rem;
   margin-top: 2.5rem;
+  opacity: 0;
+  display: none;
+}
+
+#highScoresList-PixelPals.active, #highScoresList-Designer.active, #highScoresList-Artist.active {
+  opacity: 1;
+  display: block;
 }
 
 .high-score-item {
@@ -527,4 +534,18 @@ input::placeholder {
   background: #fff;
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
+}
+
+.PixelPals-category, .Designer-category, .Artist-category {
+  margin: 0 10px;
+  background-color: #93bf70;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 3px;
+}
+
+.PixelPals-category:hover, .Designer-category:hover, .Artist-category:hover {
+  background-color: #5f7cc4;
+  color: #fff;
+  transition: all 0.3s ease;
 }
