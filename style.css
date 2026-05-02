@@ -110,6 +110,13 @@ body {
   margin-top: 1.7px;
 }
 
+.score-container .score-category {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #93bf70;
+  margin-top: -10px;
+}
+
 .score-container .score-list {
   list-style: none;
   display: flex;
@@ -476,7 +483,7 @@ input::placeholder {
   list-style: none;
   padding-left: 100px;
   margin-bottom: 1.5rem;
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
   opacity: 0;
   display: none;
 }
@@ -499,8 +506,7 @@ input::placeholder {
 }
 
 .high-score {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
   padding: 0.5rem;
   border-radius: 6px;
   color: #fff;
