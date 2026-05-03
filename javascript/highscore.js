@@ -1,11 +1,11 @@
 const username = document.getElementById('username');
 const saveScoreBtn = document.getElementById('saveScoreBtn');
-const resultScore = localStorage.getItem("latestScore");
+const latestScore = localStorage.getItem("latestScore");
 const finalScore = document.getElementById('finalScore');
 
 const listScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-finalScore.innerText = resultScore;
+finalScore.innerText = latestScore;
 
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
@@ -16,7 +16,7 @@ saveHighScore = e => {
     e.preventDefault();
 
     const score = {
-        score: resultScore,
+        score: latestScore,
         name: username.value,
         category: quizCategory,
     };

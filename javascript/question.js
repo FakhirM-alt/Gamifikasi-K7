@@ -185,6 +185,11 @@ const questions = [
         image: "./Images/Image Question-4.png",
         options: ["They have the same colors", "All are vertical", "No circles", "The lines are straight"],
         correctAnswer: 0,
+      },
+      {
+        question: "What ISN'T one of the rules for a good design?",
+        options: ["Have a concept", "Communicate, don't decorate", "Be comprehensive", "Use 2 fonts, maxybe 3"],
+        correctAnswer: 2,
       }
     ],
   }

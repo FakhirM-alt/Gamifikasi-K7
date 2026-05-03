@@ -28,6 +28,7 @@ const showQuizResult = () => {
   document.querySelector(".result-popup").classList.add("active");
   const resultText = `You have answered all <b>${numberOfQuestions}</b> questions. Great effort!`;
   resultContainer.querySelector(".result-message").innerHTML = resultText;
+  
   const resultScore = correctAnswersCount * 100 / numberOfQuestions;
   resultContainer.querySelector('#finalScore').innerHTML = resultScore;
 
