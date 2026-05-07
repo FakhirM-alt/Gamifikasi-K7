@@ -49,7 +49,7 @@ const questions = [
       },
       {
         question: "Which app that ISN'T recommended by PixelPals?",
-        options: ["Illustrator", "Figma", "CapCut", "After Effects"],
+        options: ["Illustrator", "Figma", "MS Paint", "After Effects"],
         correctAnswer: 2,
       },
     ],
