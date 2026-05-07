@@ -68,8 +68,8 @@ const questions = [
         correctAnswer: 2,
       },
       {
-        question: "Which of these tool names that AREN'T part of Adobe Illustrator?",
-        options: ["Pen Tool", "Type Tool", "Mixing Tool", "Paintbucket Tool"],
+        question: "Which design app that's mainly used on a smartphone?",
+        options: ["Adobe Illustrator", "InkBunny", "IbisPaint", "Adobe Photoshop"],
         correctAnswer: 2,
       },
       {
@@ -88,8 +88,8 @@ const questions = [
         correctAnswer: 1,
       },
       {
-        question: "What is the shortcut key for Elipse Tool in Adobe Illustrator?",
-        options: ["L", "M", "V", "Esc"],
+        question: "What is the reason people love to draw?",
+        options: ["Being creative", "Good at math", "Being rich", "Having strong build"],
         correctAnswer: 0,
       },
       {
@@ -190,6 +190,18 @@ const questions = [
         question: "What ISN'T one of the rules for a good design?",
         options: ["Have a concept", "Communicate, don't decorate", "Be comprehensive", "Use 2 fonts, maxybe 3"],
         correctAnswer: 2,
+      },
+      {
+        question: "What kind of design is this?",
+        image: "./Images/Image Question-5.png",
+        options: ["Minimalist", "Asymmetrical", "Grunge", "Typography"],
+        correctAnswer: 1
+      },
+      {
+        question: "What type of logo is this?",
+        image: "./Images/Image Question-6.png",
+        options: ["Logogram", "Logomix", "Mascot", "Logotype"],
+        correctAnswer: 3,
       }
     ],
   }
