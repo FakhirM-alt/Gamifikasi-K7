@@ -7,6 +7,7 @@ const questionStatus = quizContainer.querySelector(".question-status");
 const timerDisplay = quizContainer.querySelector(".timer-duration");
 const resultContainer = document.querySelector(".result-container");
 const menuContainer = document.querySelector(".menu-popup");
+const aboutContainer = document.querySelector(".about-popup");
 
 // Quiz state variables
 const QUIZ_TIME_LIMIT = 15;
@@ -172,6 +173,13 @@ const resetQuiz = () => {
   document.querySelector(".result-popup").classList.remove("active");
 };
 
+//Open About Popup
+const openAboutBtn = document.querySelector(".about-btn");
+openAboutBtn.addEventListener("click", () => {
+  document.querySelector(".menu-popup").classList.remove("active");
+  document.querySelector(".about-popup").classList.add("active");
+});
+
 //Open Config Popup
 const openConfigBtn = document.querySelector(".open-quiz-btn");
 openConfigBtn.addEventListener("click", () => {
@@ -184,6 +192,13 @@ const viewScoreBtn = document.querySelector(".view-score-btn");
 viewScoreBtn.addEventListener("click", () => {
   document.querySelector(".menu-popup").classList.remove("active");
   document.querySelector(".score-popup").classList.add("active");
+});
+
+//Back to Menu from About Popup
+const backToMenuFromAboutBtn = document.querySelector(".about-popup .start-up");
+backToMenuFromAboutBtn.addEventListener("click", () => {
+  document.querySelector(".about-popup").classList.remove("active");
+  document.querySelector(".menu-popup").classList.add("active");
 });
 
 //Back to Menu from Score Popup

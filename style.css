@@ -65,6 +65,14 @@ body {
   transform: translateY(-50%);
 }
 
+.circle-group-2 {
+  position: absolute;
+  display: flex;
+  gap: 5px;
+  right: 145px;
+  transform: translateY(-50%);
+}
+
 .circle-1 {
   height: 19px;
   width: 19px;
@@ -163,6 +171,46 @@ body {
   transform: translateY(0);
 }
 
+/* About Popup Stylings */
+.about-container .about-content{
+  width: 650px;
+  padding: 30px;
+  text-align: justify;
+}
+
+.about-title {
+  font-size: 2.43rem;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 450px;
+  color: #5f7cc4;
+}
+
+.about-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.social-media-about {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;   
+}
+
+.logo-social-media {
+  color: #2f51ee;
+  font-size: 2.5rem;
+  transition: color 0.3s ease;
+}
+
+.logo-social-media:hover {
+  color: #5f7cc4;
+}
+
 /* Quiz Configuration Stylings */
 .config-container {
   z-index: 10;
@@ -231,7 +279,7 @@ body {
 .quiz-footer .next-question-btn,
 .result-container .try-again-btn, 
 .view-score-btn, 
-.open-quiz-btn {
+.open-quiz-btn, .about-btn {
   color: #fff;
   border: none;
   font-weight: 500;
@@ -262,7 +310,7 @@ body {
 .config-container .start-quiz-btn:hover,
 .quiz-footer .next-question-btn:hover,
 .result-container .try-again-btn:hover, .view-score-btn:hover, 
-.save-score-btn:hover, .open-quiz-btn:hover {
+.save-score-btn:hover, .open-quiz-btn:hover, .about-btn:hover {
   background: #5f7cc4;
 }
 
