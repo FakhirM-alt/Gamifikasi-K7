@@ -81,89 +81,6 @@ const questions = [
     ],
   },
   {
-    category: "artist",
-    questions: [
-      {
-        question: "Which app is made for artist?",
-        options: ["Adobe Illustrator", "Capcut", "Adobe Audition", "Gallery"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which file type that is NOT for drawing?",
-        options: [".JPEG", ".PNG", ".MP4", ".SVG"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which design app that's mainly used on a smartphone?",
-        options: ["Adobe Illustrator", "InkBunny", "IbisPaint", "Adobe Photoshop"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the shortcut key for Copy & Paste?",
-        options: ["Ctrl + C, Ctrl + V", "Ctrl + A, Backspace", "Ctrl + Z", "Ctrl + C, Ctrl + X"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which of these shortcut keys are ONLY from MacBook?",
-        options: ["Alt + Ctrl + E", "ESC", "F", "Cmd + Z"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the name of the tool that would create path with precision?",
-        options: ["Eraser", "Pen Tool", "Eyedropper", "Elipse Tool"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the reason people love to draw?",
-        options: ["Being creative", "Good at math", "Being rich", "Having strong build"],
-        correctAnswer: 0,
-      },
-      {
-        question: "How do you get Clipping Mask to work?",
-        options: ["Merge them with a tool", "Bring the shape back of image", "Bring the shape front of image", "Edit out the image"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which is the best alternative app for Adobe Illustrator?",
-        options: ["Capcut", "Adobe Photoshop", "Gallery", "Google Images"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the best way to showcase your creative skills?",
-        options: ["Drawing", "Videos", "Web page", "Creative CV"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which image fits the missing animation frame?",
-        image: "./Images/Image Question-1.png",
-        options: ["Image 1", "Image 2", "Image 3", "Image 4"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the correct order of these animation frames?",
-        image: "./Images/Image Question-2.jpeg",
-        options: ["1-3-5-6-2-4", "1-2-3-4-5-6","1-4-2-6-3-5","1-5-3-6-2-4"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the REVERSE order of the frames?",
-        image: "./Images/Image Question-7.jpg",
-        options: ["1-2-3-4", "4-1-2-3","3-2-1-4","2-3-4-1"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which of these is NOT a type of animation?",
-        options: ["2D Animation", "3D Animation", "Stop Motion", "Motionless"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which of these art styles USED charcoal pencil?",
-        options: ["Manga", "Cartoon", "Anime", "All of the above"],
-        correctAnswer: 3,
-      }
-    ],
-  },
-  {
     category: "designer",
     questions: [
       {
@@ -243,6 +160,89 @@ const questions = [
         question: "What type of logo is this?",
         image: "./Images/Image Question-6.jpg",
         options: ["Logogram", "Logomix", "Mascot", "Logotype"],
+        correctAnswer: 3,
+      }
+    ],
+  },
+    {
+    category: "artist",
+    questions: [
+      {
+        question: "Which app is made for artist?",
+        options: ["Adobe Illustrator", "Capcut", "Adobe Audition", "Gallery"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which file type that is NOT for drawing?",
+        options: [".JPEG", ".PNG", ".MP4", ".SVG"],
+        correctAnswer: 2,
+      },
+      {
+        question: "Which design app that's mainly used on a smartphone?",
+        options: ["Adobe Illustrator", "InkBunny", "IbisPaint", "Adobe Photoshop"],
+        correctAnswer: 2,
+      },
+      {
+        question: "What is the shortcut key for Copy & Paste?",
+        options: ["Ctrl + C, Ctrl + V", "Ctrl + A, Backspace", "Ctrl + Z", "Ctrl + C, Ctrl + X"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Which of these shortcut keys are ONLY from MacBook?",
+        options: ["Alt + Ctrl + E", "ESC", "F", "Cmd + Z"],
+        correctAnswer: 3,
+      },
+      {
+        question: "What is the name of the tool that would create path with precision?",
+        options: ["Eraser", "Pen Tool", "Eyedropper", "Elipse Tool"],
+        correctAnswer: 1,
+      },
+      {
+        question: "What is the reason people love to draw?",
+        options: ["Being creative", "Good at math", "Being rich", "Having strong build"],
+        correctAnswer: 0,
+      },
+      {
+        question: "How do you get Clipping Mask to work?",
+        options: ["Merge them with a tool", "Bring the shape back of image", "Bring the shape front of image", "Edit out the image"],
+        correctAnswer: 2,
+      },
+      {
+        question: "Which is the best alternative app for Adobe Illustrator?",
+        options: ["Capcut", "Adobe Photoshop", "Gallery", "Google Images"],
+        correctAnswer: 1,
+      },
+      {
+        question: "What is the best way to showcase your creative skills?",
+        options: ["Drawing", "Videos", "Web page", "Creative CV"],
+        correctAnswer: 3,
+      },
+      {
+        question: "Which image fits the missing animation frame?",
+        image: "./Images/Image Question-1.png",
+        options: ["Image 1", "Image 2", "Image 3", "Image 4"],
+        correctAnswer: 1,
+      },
+      {
+        question: "What is the correct order of these animation frames?",
+        image: "./Images/Image Question-2.jpeg",
+        options: ["1-3-5-6-2-4", "1-2-3-4-5-6","1-4-2-6-3-5","1-5-3-6-2-4"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What is the REVERSE order of the frames?",
+        image: "./Images/Image Question-7.jpg",
+        options: ["1-2-3-4", "4-1-2-3","3-2-1-4","2-3-4-1"],
+        correctAnswer: 1,
+      },
+      {
+        question: "Which of these is NOT a type of animation?",
+        options: ["2D Animation", "3D Animation", "Stop Motion", "Motionless"],
+        correctAnswer: 3,
+      },
+      {
+        question: "Which of these art styles USED charcoal pencil?",
+        options: ["Manga", "Cartoon", "Anime", "All of the above"],
         correctAnswer: 3,
       }
     ],
