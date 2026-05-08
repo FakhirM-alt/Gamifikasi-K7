@@ -22,7 +22,7 @@ highScoresList_1.innerHTML = filteredScore_1
 .map( score => {
     return `<div class="high-score-item">
         <li class="high-score" id="textScores">${score.name}</li>
-        <li class="high-score" id="textScores">${score.score} </li>
+        <li class="high-score-2" id="textScores">${score.score} </li>
     </div>`;
 })
 .join("");
@@ -41,7 +41,7 @@ highScoresList_2.innerHTML = filteredScore_2
 
     return `<div class="high-score-item">
         <li class="high-score" id="textScores">${score.name}</li>
-        <li class="high-score" id="textScores">${score.score} </li>
+        <li class="high-score-2" id="textScores">${score.score} </li>
     </div>`;
 })
 .join("");
@@ -60,7 +60,7 @@ highScoresList_3.innerHTML = filteredScore_3
 
     return `<div class="high-score-item">
         <li class="high-score" id="textScores">${score.name}</li>
-        <li class="high-score" id="textScores">${score.score} </li>
+        <li class="high-score-2" id="textScores">${score.score} </li>
     </div>`;
 })
 .join("");

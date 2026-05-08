@@ -543,11 +543,11 @@ input::placeholder {
 
 /* High Scores */
 #highScoresList-PixelPals, #highScoresList-Designer, #highScoresList-Artist {
-  list-style: none;
   padding-left: 100px;
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
   opacity: 0;
+  list-style: none;
   display: none;
 }
 
@@ -573,7 +573,17 @@ input::placeholder {
   font-size: 1.7rem;
   font-weight: bold;
   padding: 0.5rem;
+  margin-left: 40px;
   margin-right: 90px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.high-score-2 {
+  list-style: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 0.5rem;
   border-radius: 6px;
   color: #fff;
 }
