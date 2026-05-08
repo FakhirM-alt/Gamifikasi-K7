@@ -20,7 +20,6 @@ let currentImage = null;
 const questionsIndexHistory = [];
 let correctAnswersCount = 0;
 let disableSelection = false;
-let disablesaveScoreBtn = false;
 
 // Display the quiz result and hide the quiz container
 const showQuizResult = () => {
@@ -30,10 +29,11 @@ const showQuizResult = () => {
   const resultText = `You have answered all <b>${numberOfQuestions}</b> questions. Great effort!`;
   resultContainer.querySelector(".result-message").innerHTML = resultText;
   
-  const resultScore = correctAnswersCount * 100 / numberOfQuestions;
-  resultContainer.querySelector('#finalScore').innerHTML = resultScore.toFixed(1);
+  let resultScore = Math.floor(correctAnswersCount * 100 / numberOfQuestions);
+  
+  resultContainer.querySelector('#finalScore').innerHTML = resultScore;
 
-  localStorage.setItem("latestScore", resultScore.toFixed());
+  localStorage.setItem("Score", resultScore);
   localStorage.setItem("quizCategory", quizCategory);
 };
 

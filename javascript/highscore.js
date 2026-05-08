@@ -1,6 +1,7 @@
 const highScoresList_1 = document.getElementById("highScoresList-PixelPals");
 const highScoresList_2 = document.getElementById("highScoresList-Designer");
 const highScoresList_3 = document.getElementById("highScoresList-Artist");
+
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 const textScores = document.getElementById("textScores");
@@ -20,10 +21,7 @@ openPixelPals.addEventListener("click", () => {
 
 highScoresList_1.innerHTML = filteredScore_1
 .map( score => {
-    return `<div class="high-score-item">
-        <li class="high-score" id="textScores">${score.name}</li>
-        <li class="high-score-2" id="textScores">${score.score} </li>
-    </div>`;
+    return `<li class="high-score" id="textScores">${score.name} - ${score.score}</li>`;
 })
 .join("");
 
@@ -39,10 +37,7 @@ openDesigner.addEventListener("click", () => {
 highScoresList_2.innerHTML = filteredScore_2
 .map( score => {
 
-    return `<div class="high-score-item">
-        <li class="high-score" id="textScores">${score.name}</li>
-        <li class="high-score-2" id="textScores">${score.score} </li>
-    </div>`;
+    return `<li class="high-score" id="textScores">${score.name} - ${score.score}</li>`;
 })
 .join("");
 
@@ -58,9 +53,6 @@ openArtist.addEventListener("click", () => {
 highScoresList_3.innerHTML = filteredScore_3
 .map( score => {
 
-    return `<div class="high-score-item">
-        <li class="high-score" id="textScores">${score.name}</li>
-        <li class="high-score-2" id="textScores">${score.score} </li>
-    </div>`;
+    return `<li class="high-score" id="textScores">${score.name} - ${score.score}</li>`;
 })
 .join("");
