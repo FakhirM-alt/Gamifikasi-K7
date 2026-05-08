@@ -1,66 +1,35 @@
-const highScoresList_1 = document.getElementById("highScoresList-PixelPals");
-const highScoresList_2 = document.getElementById("highScoresList-Designer");
-const highScoresList_3 = document.getElementById("highScoresList-Artist");
-const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const username = document.getElementById('username');
+const saveScoreBtn = document.getElementById('saveScoreBtn');
+const finalScore = document.getElementById('finalScore');
+const resultScore = localStorage.getItem("latestScore");
 
-const textScores = document.getElementById("textScores");
+const listScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-const filteredScore_1 = highScores.filter(score => score.category.includes("PixelPals"));
-const filteredScore_2 = highScores.filter(score => score.category.includes("Designer"));
-const filteredScore_3 = highScores.filter(score => score.category.includes("Artist"));  
+const MAX_HIGH_SCORES = 30;
 
-const openPixelPals = document.querySelector(".PixelPals-category");
-openPixelPals.addEventListener("click", () => {
-  document.querySelector("#highScoresList-PixelPals").classList.add("active");
-  document.querySelector("#highScoresList-Designer").classList.remove("active");
-  document.querySelector("#highScoresList-Artist").classList.remove("active");
+finalScore.innerText = resultScore;
 
-  document.getElementById("score-category").textContent = "PixelPals";
+username.addEventListener('keyup', () => {
+    saveScoreBtn.disabled = !username.value;
 });
 
-highScoresList_1.innerHTML = filteredScore_1
-.map( score => {
-    return `<div class="high-score-item">
-        <li class="high-score" id="textScores">${score.name}</li>
-        <li class="high-score-2" id="textScores">${score.score} </li>
-    </div>`;
-})
-.join("");
+saveHighScore = e => {
+    console.log("Score saved!");
+    e.preventDefault();
 
-const openDesigner = document.querySelector(".Designer-category");
-openDesigner.addEventListener("click", () => {
-  document.querySelector("#highScoresList-Designer").classList.add("active");
-  document.querySelector("#highScoresList-PixelPals").classList.remove("active");
-  document.querySelector("#highScoresList-Artist").classList.remove("active");
+    location.reload();
 
-  document.getElementById("score-category").textContent = "Designer";
-});
+    const score = {
+        score: resultScore,
+        name: username.value,
+        category: quizCategory,
+    };
 
-highScoresList_2.innerHTML = filteredScore_2
-.map( score => {
+    listScores.push(score);
 
-    return `<div class="high-score-item">
-        <li class="high-score" id="textScores">${score.name}</li>
-        <li class="high-score-2" id="textScores">${score.score} </li>
-    </div>`;
-})
-.join("");
+    listScores.sort((a, b) => b.score - a.score);
 
-const openArtist = document.querySelector(".Artist-category");
-openArtist.addEventListener("click", () => {
-  document.querySelector("#highScoresList-Artist").classList.add("active");
-  document.querySelector("#highScoresList-PixelPals").classList.remove("active");
-  document.querySelector("#highScoresList-Designer").classList.remove("active");
+    listScores.splice(10);
 
-  document.getElementById("score-category").textContent = "Artist";
-});
-
-highScoresList_3.innerHTML = filteredScore_3
-.map( score => {
-
-    return `<div class="high-score-item">
-        <li class="high-score" id="textScores">${score.name}</li>
-        <li class="high-score-2" id="textScores">${score.score} </li>
-    </div>`;
-})
-.join("");
+    localStorage.setItem("highScores", JSON.stringify(listScores));
+}
