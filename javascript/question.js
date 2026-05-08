@@ -3,8 +3,8 @@ const questions = [
     category: "pixelpals",
     questions: [
       {
-        question: "What is one of the core streams of PixelPals?",
-        options: ["Artist", "Project Manager", "Programmer", "Planner"],
+        question: "What is the core streams of PixelPals?",
+        options: ["Artist & Designer", "Project Manager & Coordinator", "Programmer & Designer", "Planner & Artist"],
         correctAnswer: 0,
       },
       {
@@ -33,8 +33,8 @@ const questions = [
         correctAnswer: 2,
       },
       {
-        question: "What is the name of one of the lecturers?",
-        options: ["Jennifer Leonita", "Carl Anderson", "Ploopy Anime", "Pamela Jaya"],
+        question: "Where is the Lab Promed located?",
+        options: ["Building B - Vokasi UI", "Building C - Vokasi UI", "Business Center FL 2 - Vokasi UI", "Bulding A - Vokasi UI"],
         correctAnswer: 0,
       },
       {
