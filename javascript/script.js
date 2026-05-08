@@ -26,14 +26,15 @@ const showQuizResult = () => {
   clearInterval(timer);
   document.querySelector(".quiz-popup").classList.remove("active");
   document.querySelector(".result-popup").classList.add("active");
+  
   const resultText = `You have answered all <b>${numberOfQuestions}</b> questions. Great effort!`;
   resultContainer.querySelector(".result-message").innerHTML = resultText;
   
-  let resultScore = Math.floor(correctAnswersCount * 100 / numberOfQuestions);
+  const latestScore = Math.floor(correctAnswersCount * 100 / numberOfQuestions);
   
-  resultContainer.querySelector('#finalScore').innerHTML = resultScore;
+  resultContainer.querySelector('#finalScore').innerHTML = latestScore;
 
-  localStorage.setItem("Score", resultScore);
+  localStorage.setItem("recentScore", latestScore);
   localStorage.setItem("quizCategory", quizCategory);
 };
 
