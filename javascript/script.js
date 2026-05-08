@@ -31,9 +31,9 @@ const showQuizResult = () => {
   resultContainer.querySelector(".result-message").innerHTML = resultText;
   
   const resultScore = correctAnswersCount * 100 / numberOfQuestions;
-  resultContainer.querySelector('#finalScore').innerHTML = resultScore;
+  resultContainer.querySelector('#finalScore').innerHTML = resultScore.toFixed(1);
 
-  localStorage.setItem("latestScore", resultScore);
+  localStorage.setItem("latestScore", resultScore.toFixed());
   localStorage.setItem("quizCategory", quizCategory);
 };
 
@@ -114,7 +114,7 @@ const renderQuestion = () => {
 
   // Update the UI
   nextQuestionBtn.style.visibility = "hidden";
-  quizContainer.querySelector(".quiz-timer").style.background = "#32313C";
+  quizContainer.querySelector(".quiz-timer").style.background = "#5f7cc4";
   quizContainer.querySelector(".question-text").textContent = currentQuestion.question;
   quizContainer.querySelector(".question-image").style.display = "none"; // Hide image by default
 

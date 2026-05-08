@@ -35,7 +35,7 @@ const questions = [
       {
         question: "Where is the Lab Promed located?",
         options: ["Building B - Vokasi UI", "Building C - Vokasi UI", "Business Center FL 2 - Vokasi UI", "Bulding A - Vokasi UI"],
-        correctAnswer: 0,
+        correctAnswer: 2,
       },
       {
         question: "What is the artstyle of PixelPals logo?",
@@ -48,8 +48,34 @@ const questions = [
         correctAnswer: 3,
       },
       {
+        question: "What does this image look like?",
+        image: "./Images/PixelPals-Logo.webp",
+        options: ["Dinosaur", "Letter P", "Pixel", "1 and 2"],
+        correctAnswer: 3,
+      },
+      {
+        question: "What is the name of Media Productions Lab?",
+        options: ["Media Lab", "Polar Lab", "Creative Lab", "Lab Effects"],
+        correctAnswer: 1,
+      },
+      {
+        question: "Which app does have PixelPals's Social Media?",
+        options: ["Twitter", "Facebook", "LinkedIn", "Instagram"],
+        correctAnswer: 3,
+      },
+      {
+        question: "When did Pipa was born?",
+        options: ["March 10", "April 1", "May 5", "August 10"],
+        correctAnswer: 0,
+      },
+      {
         question: "Which app that ISN'T recommended by PixelPals?",
         options: ["Illustrator", "Figma", "MS Paint", "After Effects"],
+        correctAnswer: 2,
+      },
+      {
+        question: "What is PixelPals specialize in?",
+        options: ["Storytelling", "Sponsors", "Animation", "Engineering"],
         correctAnswer: 2,
       },
     ],
@@ -118,6 +144,22 @@ const questions = [
         image: "./Images/Image Question-2.jpeg",
         options: ["1-3-5-6-2-4", "1-2-3-4-5-6","1-4-2-6-3-5","1-5-3-6-2-4"],
         correctAnswer: 0,
+      },
+      {
+        question: "What is the REVERSE order of the frames?",
+        image: "./Images/Image Question-7.jpg",
+        options: ["1-2-3-4", "4-1-2-3","3-2-1-4","2-3-4-1"],
+        correctAnswer: 1,
+      },
+      {
+        question: "Which of these is NOT a type of animation?",
+        options: ["2D Animation", "3D Animation", "Stop Motion", "Motionless"],
+        correctAnswer: 3,
+      },
+      {
+        question: "Which of these art styles USED charcoal pencil?",
+        options: ["Manga", "Cartoon", "Anime", "All of the above"],
+        correctAnswer: 3,
       }
     ],
   },
@@ -188,18 +230,18 @@ const questions = [
       },
       {
         question: "What ISN'T one of the rules for a good design?",
-        options: ["Have a concept", "Communicate, don't decorate", "Be comprehensive", "Use 2 fonts, maxybe 3"],
+        options: ["Have a concept", "Communicate, don't decorate", "Be comprehensive", "Use 2 fonts, maybe 3"],
         correctAnswer: 2,
       },
       {
         question: "What kind of design is this?",
-        image: "./Images/Image Question-5.png",
+        image: "./Images/Image Question-5.jpg",
         options: ["Minimalist", "Asymmetrical", "Grunge", "Typography"],
         correctAnswer: 1
       },
       {
         question: "What type of logo is this?",
-        image: "./Images/Image Question-6.png",
+        image: "./Images/Image Question-6.jpg",
         options: ["Logogram", "Logomix", "Mascot", "Logotype"],
         correctAnswer: 3,
       }

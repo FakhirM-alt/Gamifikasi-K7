@@ -5,6 +5,8 @@ const resultScore = localStorage.getItem("latestScore");
 
 const listScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
+const MAX_HIGH_SCORES = 30;
+
 finalScore.innerText = resultScore;
 
 username.addEventListener('keyup', () => {
@@ -14,6 +16,8 @@ username.addEventListener('keyup', () => {
 saveHighScore = e => {
     console.log("Score saved!");
     e.preventDefault();
+
+    location.reload();
 
     const score = {
         score: resultScore,
@@ -25,7 +29,7 @@ saveHighScore = e => {
 
     listScores.sort((a, b) => b.score - a.score);
 
-    listScores.splice(15);
+    listScores.splice(10);
 
     localStorage.setItem("highScores", JSON.stringify(listScores));
 }

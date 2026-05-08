@@ -54,7 +54,18 @@ body {
   border-radius: 7px;
   border-style: solid;
   border-color: #2f51ee;
-  z-index: 0;
+  z-index: 2;
+}
+
+.tab-2 {
+  background-color: #d0fd5f;
+  height: 67px;
+  position: relative;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-style: solid;
+  border-color: #2f51ee;
+  z-index: 2;
 }
 
 .circle-group {
@@ -332,6 +343,8 @@ body {
 }
 
 .quiz-header .quiz-title {
+  display: flex;
+  align-items: center;
   font-size: 2.43rem;
   font-weight: 700;
   color: #5f7cc4;
@@ -545,8 +558,9 @@ input::placeholder {
 
 .high-score-item {
   display: flex;
-  width: fit-content;
-  background: #2f51ee;
+  width: 70%;
+  background: #93bf70;
+  border: #1e42e6 1.5px solid;
   border-radius: 9px;
   margin-bottom: 5px;
 }
@@ -556,8 +570,10 @@ input::placeholder {
 }
 
 .high-score {
-  font-size: 1.1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
   padding: 0.5rem;
+  margin-right: 90px;
   border-radius: 6px;
   color: #fff;
 }
@@ -604,4 +620,14 @@ input::placeholder {
   background-color: #5f7cc4;
   color: #fff;
   transition: all 0.3s ease;
+}
+
+.buttons {
+  position: relative;
+  z-index: 1;
+  background-color: #1e42e6;
+  padding: 10px 0;
+  border: #2f51ee 1.5px solid;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
