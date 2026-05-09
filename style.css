@@ -561,6 +561,8 @@ input::placeholder {
   font-size: 1.7rem;
   font-weight: bold;
   padding: 0.5rem;
+  border-color: #5f7cc4;
+  border-style: solid;
   margin-bottom: 10px;
   border-radius: 6px;
   background: #93bf70;

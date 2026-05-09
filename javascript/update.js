@@ -1,13 +1,13 @@
 const username = document.getElementById('username');
 const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById('finalScore');
-const latestScore = localStorage.getItem("latestScore");
+const recentScore = localStorage.getItem("recentScore");
 
 const listScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 const MAX_HIGH_SCORES = 15;
 
-finalScore.innerText = latestScore;
+finalScore.innerText = recentScore;
 
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
@@ -17,13 +17,13 @@ saveHighScore = e => {
     console.log("Score saved!");
     e.preventDefault();
 
+    const currentScore = localStorage.getItem("recentScore");
+
     const score = {
-        score: latestScore,
+        score: currentScore,
         category: quizCategory,
         name: username.value,
     };
-
-    location.reload();
 
     listScores.push(score);
 
@@ -32,4 +32,6 @@ saveHighScore = e => {
     listScores.splice(5);
 
     localStorage.setItem("highScores", JSON.stringify(listScores));
+
+    location.reload();
 }
