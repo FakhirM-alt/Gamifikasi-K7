@@ -557,6 +557,16 @@ input::placeholder {
   display: block;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #5f7cc4;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
 .high-score {
   font-size: 1.7rem;
   font-weight: bold;

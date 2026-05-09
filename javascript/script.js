@@ -30,7 +30,7 @@ const showQuizResult = () => {
   const resultText = `You have answered all <b>${numberOfQuestions}</b> questions. Great effort!`;
   resultContainer.querySelector(".result-message").innerHTML = resultText;
   
-  const latestScore = correctAnswersCount * 100 / numberOfQuestions;
+  const latestScore = Math.floor(correctAnswersCount * 100 / numberOfQuestions);
   
   resultContainer.querySelector('#finalScore').innerHTML = latestScore;
 
