@@ -567,6 +567,11 @@ input::placeholder {
   border-bottom-right-radius: 6px;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #93bf70;
+  border-radius: 6px;
+}
+
 .high-score {
   font-size: 1.7rem;
   font-weight: bold;
